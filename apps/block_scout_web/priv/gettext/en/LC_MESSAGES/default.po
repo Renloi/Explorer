@@ -152,7 +152,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/_metatags.html.eex:2
 msgid "API for the %{subnetwork} - BlockScout"
-msgstr "API for the %{subnetwork} - BlockScout"
+msgstr "API for the %{subnetwork} - Renloi Explorer"
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:124
@@ -405,7 +405,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/chain/_metatags.html.eex:4
 msgid "BlockScout provides analytics data, API, and Smart Contract tools for the %{subnetwork}"
-msgstr ""
+msgstr "Renloi Explorer provides analytics data, API, and Smart Contract tools for the %{subnetwork}"
 
 #, elixir-format
 #: lib/block_scout_web/templates/chain/show.html.eex:176
@@ -2489,7 +2489,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:10
 msgid "This is useful to allow sending requests to blockscout without having to change anything about the request."
-msgstr ""
+msgstr "This is useful to allow sending requests to Renloi Explorer without having to change anything about the request."
 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_stakes_modal_pool_info.html.eex:31
