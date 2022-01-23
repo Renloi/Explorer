@@ -198,7 +198,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/address/overview.html.eex:166
 msgid "Address balance in xDAI (doesn't include ERC20, ERC721, ERC1155 tokens)."
-msgstr ""
+msgstr "Address balance in xDAI (doesn't include REN20, REN721, REN1155 tokens)."
 
 #, elixir-format
 #: lib/block_scout_web/templates/address/index.html.eex:5
@@ -433,7 +433,7 @@ msgstr "Renloi Explorer is a free, open-source, community driven block explorer 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_stakes_top.html.eex:45
 msgid "Bridge STAKE to Ethereum"
-msgstr ""
+msgstr "Bridge STAKE to Renloi"
 
 #, elixir-format
 #: lib/block_scout_web/templates/bridged_tokens/index.html.eex:7
@@ -1003,29 +1003,29 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/views/transaction_view.ex:214
 msgid "ERC-1155 "
-msgstr ""
+msgstr "REN-1155 "
 
 #, elixir-format
 #: lib/block_scout_web/views/transaction_view.ex:212
 msgid "ERC-20 "
-msgstr ""
+msgstr "REN-20 "
 
 #, elixir-format
 #: lib/block_scout_web/views/transaction_view.ex:213
 msgid "ERC-721 "
-msgstr ""
+msgstr "REN-721 "
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_token/overview.html.eex:1
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:93 lib/block_scout_web/templates/smart_contract/_functions.html.eex:93
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:133
 msgid "ETH"
-msgstr ""
+msgstr "RENLOI"
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:4
 msgid "ETH RPC API Documentation"
-msgstr ""
+msgstr "Renloi RPC API Documentation"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract/index.html.eex:76
@@ -1102,7 +1102,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:138
 msgid "Eth RPC"
-msgstr ""
+msgstr "Renloi RPC"
 
 #, elixir-format
 #: lib/block_scout_web/templates/address/_balance_card.html.eex:18
@@ -1430,7 +1430,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/transaction/overview.html.eex:305
 msgid "List of ERC-1155 tokens created in the transaction."
-msgstr ""
+msgstr "List of REN-1155 tokens created in the transaction."
 
 #, elixir-format
 #: lib/block_scout_web/templates/transaction/overview.html.eex:289
@@ -1489,12 +1489,12 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:49
 msgid "Main Networks"
-msgstr ""
+msgstr "Main Websites"
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_network_selector.html.eex:22
 msgid "Mainnet"
-msgstr ""
+msgstr "Main Websites"
 
 #, elixir-format
 #: lib/block_scout_web/templates/chain/show.html.eex:61
@@ -2014,7 +2014,7 @@ msgstr ""
 msgid "Searching for pools you have ever staked into. Please, wait..."
 msgstr ""
 
-#, elixir-format
+#, elixir-format 
 #: lib/block_scout_web/views/internal_transaction_view.ex:27
 msgid "Self-Destruct"
 msgstr ""
@@ -2241,7 +2241,7 @@ msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_network_selector.html.eex:23
-msgid "Testnet"
+msgid "Other Websites"
 msgstr ""
 
 #, elixir-format
@@ -2454,7 +2454,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/index.html.eex:6
 msgid "This API is provided for developers transitioning their applications from Etherscan to BlockScout. It supports GET and POST requests."
-msgstr ""
+msgstr "This API is provided for developers transitioning their applications from Renloi Explorer. It supports GET and POST requests."
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:7
