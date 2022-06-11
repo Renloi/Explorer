@@ -37,29 +37,37 @@ export function prepareMethodArgs ($functionInputs, inputs) {
         return [[]]
       } else {
         if (isArrayOfTuple(inputType)) {
-          return [JSON.parse(sanitizedInputValue)]
+          const sanitizedInputValueElements = JSON.parse(sanitizedInputValue).map((elementValue, index) => {
+            return sanitizeMutipleInputValues(elementValue, inputType, inputComponents)
+          })
+          return [sanitizedInputValueElements]
         } else {
           if (sanitizedInputValue.startsWith('[') && sanitizedInputValue.endsWith(']')) {
             sanitizedInputValue = sanitizedInputValue.substring(1, sanitizedInputValue.length - 1)
           }
           const inputValueElements = sanitizedInputValue.split(',')
-          const sanitizedInputValueElements = inputValueElements.map(elementValue => {
-            const elementInputType = inputType.split('[')[0]
-
-            let sanitizedElementValue = replaceDoubleQuotes(elementValue, elementInputType)
-            sanitizedElementValue = replaceSpaces(sanitizedElementValue, elementInputType)
-
-            if (isBoolInputType(elementInputType)) {
-              sanitizedElementValue = convertToBool(elementValue)
-            }
-            return sanitizedElementValue
-          })
+          const sanitizedInputValueElements = sanitizeMutipleInputValues(inputValueElements, inputType, inputComponents)
           return [sanitizedInputValueElements]
         }
       }
-    } else if (isBoolInputType(inputType)) {
-      return convertToBool(sanitizedInputValue)
-    } else { return sanitizedInputValue }
+    } else { return convertToBool(sanitizedInputValue, inputType) }
+  })
+}
+
+function sanitizeMutipleInputValues (inputValueElements, inputType, inputComponents) {
+  return inputValueElements.map((elementValue, index) => {
+    let elementInputType
+    if (inputType.includes('tuple')) {
+      elementInputType = inputComponents[index].type
+    } else {
+      elementInputType = inputType.split('[')[0]
+    }
+
+    let sanitizedElementValue = replaceDoubleQuotes(elementValue, elementInputType)
+    sanitizedElementValue = replaceSpaces(sanitizedElementValue, elementInputType)
+    sanitizedElementValue = convertToBool(sanitizedElementValue, elementInputType)
+
+    return sanitizedElementValue
   })
 }
 
@@ -93,7 +101,7 @@ export const formatTitleAndError = (error) => {
   } catch (exception) {
     message = ''
   }
-  return { title: title, message: message, txHash: txHash }
+  return { title, message, txHash }
 }
 
 export const getCurrentAccountPromise = (provider) => {
@@ -211,10 +219,14 @@ function trimmedAddressHash (account) {
   }
 }
 
-function convertToBool (value) {
-  const boolVal = (value === 'true' || value === '1' || value === 1)
+function convertToBool (value, type) {
+  if (isBoolInputType(type)) {
+    const boolVal = (value === 'true' || value === '1' || value === 1)
 
-  return boolVal
+    return boolVal
+  } else {
+    return value
+  }
 }
 
 function isArrayInputType (inputType) {
@@ -241,18 +253,22 @@ function isStringInputType (inputType) {
   return inputType && inputType.includes('string') && !isArrayInputType(inputType)
 }
 
+function isBytesInputType (inputType) {
+  return inputType && inputType.includes('bytes') && !isArrayInputType(inputType)
+}
+
 function isBoolInputType (inputType) {
   return inputType && inputType.includes('bool') && !isArrayInputType(inputType)
 }
 
 function isNonSpaceInputType (inputType) {
-  return isAddressInputType(inputType) || inputType.includes('int') || inputType.includes('bool')
+  return isAddressInputType(inputType) || isBytesInputType(inputType) || inputType.includes('int') || inputType.includes('bool')
 }
 
 function replaceSpaces (value, type, components) {
-  if (isNonSpaceInputType(type)) {
+  if (isNonSpaceInputType(type) && isFunction(value.replace)) {
     return value.replace(/\s/g, '')
-  } else if (isTupleInputType(type)) {
+  } else if (isTupleInputType(type) && isFunction(value.split)) {
     return value
       .split(',')
       .map((itemValue, itemIndex) => {
@@ -262,18 +278,22 @@ function replaceSpaces (value, type, components) {
       })
       .join(',')
   } else {
-    return value.trim()
+    if (typeof value.trim === 'function') {
+      return value.trim()
+    }
+    return value
   }
 }
 
 function replaceDoubleQuotes (value, type, components) {
-  if (isAddressInputType(type) || isUintInputType(type) || isStringInputType(type)) {
-    if (typeof value.replaceAll === 'function') {
+  if (isAddressInputType(type) || isUintInputType(type) || isStringInputType(type) || isBytesInputType(type)) {
+    if (isFunction(value.replaceAll)) {
       return value.replaceAll('"', '')
-    } else {
+    } else if (isFunction(value.replace)) {
       return value.replace(/"/g, '')
     }
-  } else if (isTupleInputType(type)) {
+    return value
+  } else if (isTupleInputType(type) && isFunction(value.split)) {
     return value
       .split(',')
       .map((itemValue, itemIndex) => {
@@ -285,4 +305,8 @@ function replaceDoubleQuotes (value, type, components) {
   } else {
     return value
   }
+}
+
+function isFunction (param) {
+  return typeof param === 'function'
 }

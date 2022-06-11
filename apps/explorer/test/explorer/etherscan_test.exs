@@ -1248,7 +1248,6 @@ defmodule Explorer.EtherscanTest do
       options = %{order_by_direction: :desc}
 
       found_token_transfers = Etherscan.list_token_transfers(address.hash, nil, options)
-      IO.inspect("Gimme found_token_transfers #{inspect(found_token_transfers)}")
 
       block_numbers_order = Enum.map(found_token_transfers, & &1.block_number)
 
@@ -1617,7 +1616,8 @@ defmodule Explorer.EtherscanTest do
           name: token_balance.token.name,
           decimals: token_balance.token.decimals,
           symbol: token_balance.token.symbol,
-          type: token_balance.token.type
+          type: token_balance.token.type,
+          id: token_balance.token_id
         }
       ]
 

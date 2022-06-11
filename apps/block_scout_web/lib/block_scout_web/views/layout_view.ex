@@ -7,34 +7,33 @@ defmodule BlockScoutWeb.LayoutView do
 
   import BlockScoutWeb.AddressView, only: [from_address_hash: 1]
 
-  @issue_url "https://github.com/renloi/Explorer/issues/new"
+  @issue_url "https://github.com/renloi/explorer/issues/new"
   @default_other_networks [
     %{
       title: "Renloi.org",
-      url: "https://renloi.org"
+      url: "https://renloi.org/"
     },
     %{
-      title: "Renloi testnet",
-      url: "https://explorer.testnet.renloi.org",
+      title: "Testnet",
+      url: "https://test.renloi.org",
       test_net?: true
     },
     %{
-      title: "Documentation",
-      url: "https://docs.renloi.org"
+      title: "DEX",
+      url: "https://dex.renloi.org/"
     },
     %{
-      title: "bridge",
-      url: "https://bridge.renloi.org"
+      title: "Testnet Explorer",
+      url: "https://testexlorer.renloi.org",
+      test_net?: true
     },
     %{
-      title: "Decentralized Exchange",
-      url: "https://swap.renloi.org",
-      other?: true
+      title: "Bridge",
+      url: "https://bridge.renloi.org/",
     },
     %{
-      title: "NFT Martketplace",
-      url: "https://marketplace.renloi.org",
-      other?: true
+      title: "NFT Marketplace",
+      url: "https://nft.renloi.org/",
     }
   ]
 
@@ -89,10 +88,6 @@ defmodule BlockScoutWeb.LayoutView do
     """
     *Describe your issue here.*
 
-    ### Environment
-    * Elixir Version: #{System.version()}
-    * Erlang Version: #{System.otp_release()}
-    * BlockScout Version: #{version()}
 
     * User Agent: `#{user_agent}`
 
@@ -123,7 +118,7 @@ defmodule BlockScoutWeb.LayoutView do
           nil
 
         release_link_env_var == "" || release_link_env_var == nil ->
-          "https://github.com/blockscout/blockscout/releases/tag/" <> version
+          "https://github.com/renloi/explorer/releases/tag/" <> version
 
         true ->
           release_link_env_var
