@@ -95,7 +95,7 @@ config :explorer, Explorer.Counters.AddressTokenUsdSum,
   enable_consolidation: true
 
 config :explorer, Explorer.Chain.Cache.TokenExchangeRate,
-  enabled: true,
+  enabled: false,
   enable_consolidation: true
 
 config :explorer, Explorer.Counters.TokenHoldersCounter,
