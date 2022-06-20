@@ -7,29 +7,29 @@ defmodule BlockScoutWeb.LayoutView do
 
   import BlockScoutWeb.AddressView, only: [from_address_hash: 1]
 
-  @issue_url "https://github.com/blockscout/blockscout/issues/new"
+  @issue_url "https://github.com/renloi/renloi/issues/new"
   @default_other_networks [
     %{
-      title: "POA",
-      url: "https://blockscout.com/poa/core"
+      title: "RenloiBridge",
+      url: "https://bridge.renloi.org"
     },
     %{
-      title: "Sokol",
-      url: "https://blockscout.com/poa/sokol",
+      title: "Contact through telegram",
+      url: "https://t.me/RenloiNetwork",
       test_net?: true
     },
     %{
-      title: "Gnosis Chain",
-      url: "https://blockscout.com/xdai/mainnet"
+      title: "RenloiSwap",
+      url: "https://dex.renloi.org"
     },
     %{
-      title: "Ethereum Classic",
-      url: "https://blockscout.com/etc/mainnet",
+      title: "NFT Marketplace",
+      url: "https://nft.renloi.org",
       other?: true
     },
     %{
-      title: "RSK",
-      url: "https://blockscout.com/rsk/mainnet",
+      title: "Renloi's Docs",
+      url: "https://docs.renloi.org",
       other?: true
     }
   ]
