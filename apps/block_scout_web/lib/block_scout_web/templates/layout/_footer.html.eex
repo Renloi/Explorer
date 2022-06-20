@@ -19,7 +19,7 @@
 
     <div class="row">
       <div class="col-xs-12 col-lg-3">
-        <p class="footer-info-text"><%= gettext("Renloi is a tool for inspecting and analyzing the Renloi network.") %></p>
+        <p class="footer-info-text"><%= gettext("Renloi Explorer is a web-tool for inspecting and analyzing the Renloi network. It is fully open-source and free to use.") %></p>
         <div class="footer-social-icons">
           <a href="https://github.com/renloi/explorer" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
             <div class="footer-social-icon-container fontawesome-icon github"></div>
@@ -34,7 +34,7 @@
       </div>
 
       <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-        <h3>BlockScout</h3>
+        <h3>Renloi Explorer</h3>
         <ul>
           <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Submit an Issue") %></a></li>
           <li><a href="https://github.com/renloi/explorer" rel="noreferrer" class="footer-link"><%= gettext("Contribute") %></a></li>

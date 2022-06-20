@@ -14,8 +14,13 @@ defmodule BlockScoutWeb.LayoutView do
       url: "https://bridge.renloi.org"
     },
     %{
-      title: "Contact through telegram",
+      title: "Contact through Telegram",
       url: "https://t.me/RenloiNetwork",
+      test_net?: true
+    },
+    %{
+      title: "Contact through Discord",
+      url: "https://discord.gg/GxSj86XtHz",
       test_net?: true
     },
     %{

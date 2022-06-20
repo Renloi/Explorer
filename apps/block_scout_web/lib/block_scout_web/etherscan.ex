@@ -1267,7 +1267,7 @@ defmodule BlockScoutWeb.Etherscan do
   @account_eth_get_balance_action %{
     name: "eth_get_balance",
     description:
-      "Mimics Ethereum JSON RPC's eth_getBalance. Returns the balance as of the provided block (defaults to latest)",
+      "Renloi JSON RPC's eth_getBalance. Returns the balance as of the provided block (defaults to latest)",
     required_params: [
       %{
         key: "address",
@@ -2279,7 +2279,7 @@ defmodule BlockScoutWeb.Etherscan do
 
   @block_eth_block_number_action %{
     name: "eth_block_number",
-    description: "Mimics Ethereum JSON RPC's eth_blockNumber. Returns the lastest block number",
+    description: "Renloi JSON RPC's eth_blockNumber. Returns the lastest block number",
     required_params: [],
     optional_params: [
       %{
@@ -2455,7 +2455,7 @@ defmodule BlockScoutWeb.Etherscan do
     <div class="m-2">
     curl -d '{"addressHash":"0xc63BB6555C90846afACaC08A0F0Aa5caFCB382a1","compilerVersion":"v0.5.4+commit.9549d8ff",
     "contractSourceCode":"pragma solidity ^0.5.4; \ncontract Test {\n}","name":"Test","optimization":false}'
-    -H "Content-Type: application/json" -X POST  "https://blockscout.com/poa/sokol/api?module=contract&action=verify"
+    -H "Content-Type: application/json" -X POST  "https://explorer.renloi.org/api?module=contract&action=verify"
     </pre>
     </div>
     </div>
