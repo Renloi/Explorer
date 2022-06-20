@@ -34,7 +34,7 @@
       </div>
 
       <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-        <h3>BlockScout</h3>
+        <h3>Network Explorer</h3>
         <ul>
           <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Submit an Issue") %></a></li>
           <li><a href="https://github.com/renloi/explorer" rel="noreferrer" class="footer-link"><%= gettext("Contribute") %></a></li>
@@ -62,7 +62,7 @@
 
       <%= unless Enum.empty?(test_nets) do %>
         <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-          <h3><%= gettext("Help & Support") %></h3>
+          <h3><%= gettext("Dapps") %></h3>
           <ul>
             <%= for %{title: title, url: url} <- test_nets do %>
               <li><a href="<%= url %>" rel="noreferrer" class="footer-link"> <%= title %> </a></li>
