@@ -1,4 +1,4 @@
-# Renloi Explorer Web
+# BlockScout Web
 
 This is a tool for inspecting and analyzing the POA Network blockchain from a web browser.
 
