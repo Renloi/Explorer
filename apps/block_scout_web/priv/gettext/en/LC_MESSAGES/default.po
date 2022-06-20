@@ -73,12 +73,12 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_default_title.html.eex:2
 msgid "%{subnetwork} Explorer - BlockScout"
-msgstr "%{subnetwork} Explorer"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_metatags.html.eex:2
 msgid "%{subnetwork} Staking DApp - BlockScout"
-msgstr "%{subnetwork} Staking DApp"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/views/transaction_view.ex:349
@@ -151,7 +151,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/_metatags.html.eex:2
 msgid "API for the %{subnetwork} - BlockScout"
-msgstr "API for the %{subnetwork}"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:124
@@ -202,7 +202,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/address/overview.html.eex:165
 msgid "Address balance in xDAI (doesn't include ERC20, ERC721, ERC1155 tokens)."
-msgstr "Address balance in RENLOI (doesn't include REN20, REN721, REN1155 tokens)."
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/tokens/overview/_details.html.eex:65
@@ -414,7 +414,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/chain/_metatags.html.eex:4
 msgid "BlockScout provides analytics data, API, and Smart Contract tools for the %{subnetwork}"
-msgstr "Renloi Explorer provides analytics data, API, and Smart Contract tools for the %{subnetwork}"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/chain/show.html.eex:168
@@ -437,7 +437,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:22
 msgid "Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks."
-msgstr "Renloi Explorer is a tool for inspecting and analyzing Renloi Network"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_stakes_top.html.eex:45
@@ -514,7 +514,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:41
 msgid "Chat (#blockscout)"
-msgstr "Chat (#Renloi)"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_stakes_modal_claim_reward_content.html.eex:6
@@ -1007,29 +1007,29 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/views/transaction_view.ex:214
 msgid "ERC-1155 "
-msgstr "REN-1155 "
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/views/transaction_view.ex:212
 msgid "ERC-20 "
-msgstr "REN-20 "
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/views/transaction_view.ex:213
 msgid "ERC-721 "
-msgstr "REN-721 "
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_token/overview.html.eex:1
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:104 lib/block_scout_web/templates/smart_contract/_functions.html.eex:104
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:146
 msgid "ETH"
-msgstr "RENLOI"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:4
 msgid "ETH RPC API Documentation"
-msgstr "Renloi RPC API Documentation"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract/index.html.eex:76
@@ -1106,7 +1106,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:138
 msgid "Eth RPC"
-msgstr "Renloi RPC "
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/address/_current_coin_balance.html.eex:11
@@ -1117,7 +1117,7 @@ msgstr "Renloi RPC "
 #: lib/block_scout_web/templates/transaction/_tile.html.eex:43 lib/block_scout_web/templates/transaction/overview.html.eex:411
 #: lib/block_scout_web/views/wei_helpers.ex:78
 msgid "Ether"
-msgstr "RENLOI"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/_action_tile.html.eex:211
@@ -1446,7 +1446,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/transaction/overview.html.eex:305
 msgid "List of ERC-1155 tokens created in the transaction."
-msgstr "List of REN-1155 tokens created in the transaction."
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/transaction/overview.html.eex:289
@@ -1504,7 +1504,7 @@ msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:52
-msgid "Mainnet"
+msgid "Main Networks"
 msgstr ""
 
 #, elixir-format
@@ -2278,7 +2278,7 @@ msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:65
-msgid "Testnet"
+msgid "Test Networks"
 msgstr ""
 
 #, elixir-format
@@ -2501,7 +2501,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/index.html.eex:6
 msgid "This API is provided for developers transitioning their applications from Etherscan to BlockScout. It supports GET and POST requests."
-msgstr "This API is provided for developers transitioning their applications from Other Explorers to Renloi Explorer. It supports GET and POST requests."
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:7

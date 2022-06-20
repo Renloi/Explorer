@@ -73,12 +73,12 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_default_title.html.eex:2
 msgid "%{subnetwork} Explorer - BlockScout"
-msgstr "%{subnetwork} Explorer - Explore the world of Renloi."
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_metatags.html.eex:2
 msgid "%{subnetwork} Staking DApp - BlockScout"
-msgstr "%{subnetwork} Explorer - Explore the world of Renloi."
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/views/transaction_view.ex:349
@@ -151,7 +151,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/_metatags.html.eex:2
 msgid "API for the %{subnetwork} - BlockScout"
-msgstr "API for the %{subnetwork} Explorer"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_topnav.html.eex:124
@@ -414,7 +414,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/chain/_metatags.html.eex:4
 msgid "BlockScout provides analytics data, API, and Smart Contract tools for the %{subnetwork}"
-msgstr "Renloi Explorer provides analytics data, API, and Smart Contract tools for %{subnetwork}"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/chain/show.html.eex:168
@@ -437,7 +437,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:22
 msgid "Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks."
-msgstr "Renloi Explorer is a tool for inspecting and analyzing the Renloi blockchain."
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_stakes_top.html.eex:45
@@ -514,7 +514,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/layout/_footer.html.eex:41
 msgid "Chat (#blockscout)"
-msgstr "Chat (#RenloiExplorer)"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_stakes_modal_claim_reward_content.html.eex:6
@@ -698,7 +698,7 @@ msgstr ""
 #: lib/block_scout_web/templates/address_contract/index.html.eex:25
 #: lib/block_scout_web/templates/smart_contract/_functions.html.eex:11
 msgid "Contract is not verified. However, we found a verified contract with the same bytecode in Blockscout DB"
-msgstr "Contract is not verified. However, we found a verified contract with the same bytecode in Renloi Explorer DB"
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/address_contract/index.html.eex:57
@@ -2501,7 +2501,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/index.html.eex:6
 msgid "This API is provided for developers transitioning their applications from Etherscan to BlockScout. It supports GET and POST requests."
-msgstr "This API is provided for developers transitioning their applications from Etherscan to Renloi Explorer. It supports GET and POST requests."
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:7
@@ -2536,7 +2536,7 @@ msgstr ""
 #, elixir-format
 #: lib/block_scout_web/templates/api_docs/eth_rpc.html.eex:10
 msgid "This is useful to allow sending requests to blockscout without having to change anything about the request."
-msgstr "This is useful to allow sending requests to Renloi Explorer without having to change anything about the request."
+msgstr ""
 
 #, elixir-format
 #: lib/block_scout_web/templates/stakes/_stakes_modal_pool_info.html.eex:31
